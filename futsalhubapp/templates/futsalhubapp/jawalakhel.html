@@ -1,0 +1,67 @@
+{% extends 'futsalhubapp/layout.html' %}
+
+  {% block body %}
+    {% load static %}
+
+
+   	 <div class="container"> <!--content start here-->
+
+
+<h3 class="welcomeinfutsalclubs">Welcome to Jawalakhel Futsal.</h3>
+
+ <div class="name_and_location">
+        <h5>Futsal Name: Jawalakhel Futsal</h5>
+        <h5>Location: Jawalakhel, Kathmandu,NEPAL</h5>
+    </div>
+
+<div class="futsalinfo">
+    <h5>Number of Fields:  One</h5>
+    <h5>Facilities: Free Wi-Fi</h5>
+    <h5>Contacts: 9808787878</h5>
+    <h5>Websites: www.futsalclub.com</h5>
+</div>
+
+<h6 class="futsaltimetable"> Time Table</h6>
+<div class="table">
+    <table class="table table-striped table-dark">
+    <thead>
+    <tr>
+      <th scope="col">S.N.</th>
+      <th scope="col">Timings</th>
+      <th scope="col">Rates </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Morning(6am – 10am)</td>
+      <td>Rs. 500  </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Afternoon(10am – 4pm)</td>
+      <td>Rs. 600</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Evening(4pm – 9pm)</td>
+      <td>Rs. 800</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+<div class="Booking_Button_each_club">
+    <button type="button" class="btn btn-success"><h4>Book Now</h4></button>
+</div>
+
+
+     </div>
+
+
+
+
+    {% endblock %}

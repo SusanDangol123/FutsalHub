@@ -1,0 +1,39 @@
+{% extends 'futsalhubapp/layout.html' %}
+
+  {% block body %}
+    {% load static %}
+   	 <div class="container"> <!--content start here-->
+
+
+             <div class="signup-box">
+        <h1>signup Here</h1>
+            <form method="POST" action="/signup">
+                 {% csrf_token %}
+            <p>First name</p>
+            <input type="text" name="fname" placeholder="Enter first name">
+
+
+            <p>Last name</p>
+            <input type="text" name="lname" placeholder="Enter last name">
+
+
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+
+            <p>email</p>
+            <input type="text" name="email" placeholder="Enter email">
+
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+
+            <p>Re-Enter-Password</p>
+            <input type="password" name="repassword" placeholder="Enter Re-Enter-Password">
+
+            <input type="submit" name="submit" value="signup">
+
+            </form>
+
+     </div>
+
+</div>
+    {% endblock %}

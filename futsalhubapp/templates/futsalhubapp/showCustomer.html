@@ -1,0 +1,48 @@
+{% extends 'futsalhubapp/dashboard.html' %}
+
+{% block content %}
+
+
+  <div class="Content">  <!--Content start-->
+
+      <h2>Players</h2>
+      <table class="table table-striped table-bordered table-sm">
+          <thead class="thead-dark">
+            <tr>
+                <th>player ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          {% for player in players %}
+            <tr>
+                <td>{{ player.pid}}</td>
+                <td>{{ player.username}}</td>
+                <td>{{ player.email}}</td>
+                <td>{{ player.password}}</td>
+
+            </tr>
+
+          {% endfor %}
+
+          </tbody>
+      </table><br>
+
+      <center><a href="/signup"  class="btn btn-primary">Add player</a> </center>
+
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    <button type="submit" id="prev" value="prev" name="prev">prev</button>
+    <input  type="number" value="{{page}}" name="page" id="page" />
+    <button type="submit" id="next" name="next">next</button>
+
+</form>
+
+
+  </div>
+
+{% endblock %}

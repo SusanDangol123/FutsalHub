@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <title>Futsal Club</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'futsalhubapp/css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+            <div class="webnamewithlogo"><p>Futsal Club</p></div>
+
+
+ <div id="showcase">  <!--main body-->
+
+    <div class="dropdwn"> <!--header-->
+        <nav>
+            <img class="logo" src="{% static 'futsalhubapp/static/images/logo.jpg'%}">
+            <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="#">Kathmandu <i class="fas fa-caret-down"></i> </a>
+            <ul>
+            <li><a href="/balaju">Balaju</a></li>
+            <li><a href="/thamel">Thamel</a></li>
+            <li><a href="/dillizabazar">Dillizabazar</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Bhaktapur <i class="fas fa-caret-down"></i> </a>
+            <ul>
+            <li><a href="/thimi">Thimi</a></li>
+            <li><a href="/suryabinayak">Suryabinayak</a></li>
+            <li><a href="/changunarayan">Changunarayan</a></li>
+            </ul>
+            </li>
+
+            <li><a href="#">Lalitpur <i class="fas fa-caret-down"></i> </a>
+            <ul>
+            <li><a href="/patan">Patan </a></li>
+            <li><a href="/jawalakhel">Jawalakhel</a></li>
+            <li><a href="/kumaripati">Kumaripati</a></li>
+            </ul>
+            <li><a href="/training">Training</a></li>
+            <li><a href="/login">login</a></li>
+            <li><a href="/signup">signup</a></li>
+            </li>
+            </ul>
+        </nav>
+    </div>  <!--header end-->
+
+    {% block body %}
+
+
+    {% endblock %}
+
+
+    <div id="main-footer"> <!--footer start-->
+        <footer >
+
+
+            <div class="furthermore">
+                <h5 id="innerfurthermore">Further More Information</h5>
+                <h6>Futsal club</h6>
+                <h6>Phone:9846764973</h6>
+                <h6>futsal221@gmail.com</h6>
+            </div>
+
+            <div class="footersocialmedia">
+                <h5 id="innerfootersocialmedia">Contact us</h5>
+                <a href="https://facebook.com" class="fa fa-facebook"></a>
+                <a href="https://youtube.com" class="fa fa-youtube"></a>
+                <a href="https://youtube.com" class="fa fa-twitter"></a>
+            </div>
+
+            <h5 class="copyright">Futsal Club &copy; 2020, All Rights Reserved.</h5>
+
+        </footer>
+    </div><!--footer end-->
+
+
+</div>
+</body>
+</html>

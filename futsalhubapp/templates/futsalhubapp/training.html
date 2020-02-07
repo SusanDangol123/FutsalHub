@@ -1,0 +1,36 @@
+{% extends 'futsalhubapp/layout.html' %}
+
+  {% block body %}
+    {% load static %}
+
+   	 <div class="container"> <!--content start here-->
+
+
+                <div class="training-box">
+        <h1 class="traininghere">For Training</h1>
+            <form>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>email</p>
+            <input type="text" name="email" placeholder="Enter email">
+            <p>phone no.</p>
+            <input type="number" name="phone" placeholder="Enter phone number">
+
+
+            <p>Time Duration</p>
+            <input type="radio" name="time" value="1month" >Rs.5000/1 month<br>
+             <input type="radio" name="time" value="3month">Rs.9000/3 months<br>
+             <input type="radio" name="time" value="6month"> Rs.13000/6 months<br>
+
+             <input type="submit" name="submit" value="training">
+
+
+            </form>
+
+
+            </div>
+
+
+</div>
+
+    {% endblock %}

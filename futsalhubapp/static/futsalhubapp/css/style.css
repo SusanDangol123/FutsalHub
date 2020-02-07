@@ -1,0 +1,582 @@
+
+/* this is for all webpage*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Utility Classes*/
+.container  {
+    margin: auto;
+    max-width: 1100px;
+    height: 800px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.text-primary {
+    color: #bb0000;
+    font-size: 40px;
+    padding-top: 90px;
+    padding-left: 200px;
+}   
+.lead {
+    font-size: 20px;
+}
+.events {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    color: #fff !important;
+    background: #333 !important;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    width: 214px;
+
+}
+.events:hover {
+    background: #f7c08a !important;
+    color: #333333 !important;
+}
+.events-light {
+    background: #f4f4f4 !important;
+    color: #333333 !important;
+}
+
+
+/* Showcase*/
+
+#showcase {
+    background: url('images/b4.jpg') no-repeat
+    center center/cover;
+    height: 770px;
+}
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 240px;
+}
+#showcase .showcase-content h1{
+    font-size: 60px;
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*This is for navigation*/
+
+
+.dropdwn{
+    margin: 0 auto ;
+}
+nav{
+    height: 60px;
+    background: #2c3e50;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+.logo{
+    width: 57px;
+    height: 60px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    background: #2c3e50;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    transition: .5s;
+}
+nav ul li a:hover{
+    background: #243342;
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    line-height: 20px !important;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    line-height: 20px !important;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+    height: auto;
+}
+
+
+
+/*this is end of navigation*/
+
+
+
+/*this is for home*/
+a {
+    color: #333 ;
+    text-decoration: none !important;
+
+}
+
+.fourevents
+{
+    padding-top: 400px;
+}
+.welcome
+{
+margin-bottom: 30px;
+}
+
+#home_info {
+    height: 450px;
+}
+#home_info .info-img {
+    float: left;
+    width: 50%;
+    background: url("../img/background.jpg") no-repeat;
+    min-height: 100%;
+}
+#home_info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+#home_info .info-content p {
+    padding-bottom: 30px;
+}
+
+.webnamewithlogo{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 60px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+/*this is end of home*/
+
+
+
+
+
+
+
+ /* this is for Footer*/
+
+
+
+#main-footer {
+    text-align: center;
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    height: 133px !important;
+
+}
+
+.footersocialmedia{   
+    float: right; 
+
+
+
+    text-align:left;
+   
+   
+    padding-top: 5px;
+    padding-left:3px;
+}
+
+.furthermore{
+    float: left;
+    padding-right: 40px;
+}
+#innerfurthermore{
+    color: yellow;
+}
+#innerfootersocialmedia{
+    color: yellow;
+}
+.copyright{
+    padding-right: 300px;
+    color: yellow;
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+ float:right;
+}
+
+.fa-facebook {
+ background: #3B5998;
+color: white;
+
+}
+.fa-twitter{
+background: #3B5998;
+color: white;   
+}
+.fa-youtube {
+background: #bb0000;
+color: white;
+
+}
+
+
+
+
+ /* this is end of Footer*/
+
+
+
+
+
+/*practice for all pages except home*/
+
+
+
+.welcome_diffrent_foostal_club_h1_tag{
+    text-align: center;
+    padding-top: 250px;
+    font-size: 60px;
+}
+
+
+
+
+
+
+/*other web pages*/
+
+.futsaltimetable{
+color: black; 
+padding-top: 31px;
+text-align: center;
+font-size: 40px;
+}
+.futsalinfo{
+ color: white;  
+ padding-top: 20px;    
+ font-size: 50px; 
+ padding-left: 29px; 
+}
+.welcomeinfutsalclubs{    
+    color: red; 
+    text-align: center;
+    font-size: 55px;
+}
+.name_and_location{
+    padding-left: 29px; 
+    color: white; 
+    padding-top: 50px;
+    font-size: 50px;
+
+}
+.Booking_Button_each_club{
+    float: right;
+    padding-right: 490px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+}
+
+
+
+/*css for login*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 90%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+.loginhere
+{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/*css for signup*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.signup-box{
+    width: 320px;
+    height: 699px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    padding-bottom: 400px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.signup-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.signup-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.signup-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.signup-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.signup-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.signup-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.signup-box a:hover
+{
+    color: #39dc79;
+}
+
+
+
+
+/*css for training*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.training-box{
+    width: 320px;
+    height: 670px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.training-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.training-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.training-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.training-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.training-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.training-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.training-box a:hover
+{
+    color: #39dc79;
+}
+.traininghere
+{
+    margin-top: 10px;
+}
+

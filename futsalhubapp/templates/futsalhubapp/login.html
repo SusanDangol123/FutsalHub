@@ -1,0 +1,29 @@
+{% extends 'futsalhubapp/layout.html' %}
+
+  {% block body %}
+    {% load static %}
+
+   	 <div class="container"> <!--content start here-->
+
+
+        <div class="login-box">
+                              <h1 class="loginhere">Login Here</h1>
+                                  <form method="POST" action="/entryCustomer">
+                                      {% csrf_token %}
+                                    <p>Email</p>
+                                    <input type="text" name="email" placeholder="Enter email">
+                                    <p>Password</p>
+                                    <input type="password" name="password" placeholder="Enter Password">
+                                    <input type="submit" name="submit" value="Login">
+                                    <a href="#">Forget Password</a>
+                                    </form>
+            <div>
+                 {% for message in messages %}
+                 <h3> {{message}}</h3>
+                 {% endfor %}
+             </div>
+
+        </div>
+
+     </div>
+    {% endblock %}

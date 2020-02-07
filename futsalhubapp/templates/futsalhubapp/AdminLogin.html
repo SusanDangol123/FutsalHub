@@ -1,0 +1,40 @@
+{% extends 'futsalhubapp/layout.html' %}
+
+  {% block body %}
+    {% load static %}
+
+   	 <div class="container"> <!--content start here-->
+
+
+
+       <form class="loginform" method="POST" action="/entry">
+           {% csrf_token %}
+        <h1>Admin Log-In</h1>
+
+        <div class="login_form_elements">
+          <input type="text" placeholder="Enter-email" name="email" required>
+        </div>
+
+
+        <div class="login_form_elements">
+          <input type="password" placeholder="Enter-Password" name="password" required>
+        </div>
+
+
+
+        <div class="loginbottom">
+          <button type="submit" class="btn1 btn-primary btn-lg">Admin Log-in</button>
+        </div>
+
+
+      </form>
+<div>
+    {% for message in messages %}
+        <h3> {{message}}</h3>
+        {% endfor %}
+</div>
+
+
+</div>
+
+    {% endblock %}
