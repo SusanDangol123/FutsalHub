@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -7,7 +6,10 @@
 
 
 	{% load static %}
-  <link rel="stylesheet" type="text/css" href=" {% static 'sunvoyoga/css/style.css'%}" />
+  <link rel="stylesheet" type="text/css" href=" {% static 'futsalhubapp/css/style.css'%}" />
+
+      <script src="{% static 'futsalhubapp/javascript/jquery-3.4.1.min.js' %}" ></script>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -15,7 +17,7 @@
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
   crossorigin="anonymous">
 
-
+</head>
 
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -35,8 +37,8 @@
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/show">
+              <li id="user" class="nav-item">
+                <a class="nav-link"  href="/show">
                   <span data-feather="user"></span>
                   User
                 </a>
@@ -80,5 +82,7 @@
     <script>
       feather.replace()
     </script>
-  </body>
+
+</body>
+
 </html>

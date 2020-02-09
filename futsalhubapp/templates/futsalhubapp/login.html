@@ -3,12 +3,51 @@
   {% block body %}
     {% load static %}
 
+
+
+<script>
+function validateForm()
+{
+  var email = document.forms["loginform"]["email"].value;
+  var password = document.forms["loginform"]["password"].value;
+
+  var atposition=email.indexOf("@");
+  var dotposition=email.lastIndexOf(".");
+
+   if (email == "" )
+   {
+    alert("please enter email");
+    return false;
+   }
+
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+  {
+  alert("Please enter a valid email address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+  return false;
+  }
+
+   if (password == "")
+  {
+    alert("please enter password");
+    return false;
+  }
+
+   if (password.length < 2 || password.length >= 15)
+  {
+    alert("Invalid Length!, Password must be greater then 2 and less then 15 in Length.");
+    return false;
+  }
+
+}
+</script>
+
+
    	 <div class="container"> <!--content start here-->
 
 
         <div class="login-box">
                               <h1 class="loginhere">Login Here</h1>
-                                  <form method="POST" action="/entryCustomer">
+                                  <form method="POST" action="/entryCustomer" name="loginform" onsubmit=" return validateForm()">
                                       {% csrf_token %}
                                     <p>Email</p>
                                     <input type="text" name="email" placeholder="Enter email">

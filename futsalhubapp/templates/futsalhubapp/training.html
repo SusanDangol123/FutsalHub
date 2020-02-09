@@ -3,12 +3,62 @@
   {% block body %}
     {% load static %}
 
+
+
+
+<script>
+function validateForm()
+{
+  var username = document.forms["mytrainingform"]["username"].value;
+  var email = document.forms["mytrainingform"]["email"].value;
+  var phone = document.forms["mytrainingform"]["phone"].value;
+  var time= document.forms["mytrainingform"]["time"].value;
+
+
+  var atposition=email.indexOf("@");
+  var dotposition=email.lastIndexOf(".");
+
+   if (email== "" )
+   {
+    alert("please enter email");
+    return false;
+   }
+
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+  {
+  alert("Please enter a valid email address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+  return false;
+  }
+
+   if (username == "")
+  {
+    alert("please enter username");
+    return false;
+  }
+
+  if(isNaN(phone))
+    {
+       alert("Enter numeric value")
+       return false;
+    }
+
+    if(phone.length<10)
+    {
+        alert("Enter numeric at least 10 number")
+       return false;
+     }
+
+}
+</script>
+
+
+
    	 <div class="container"> <!--content start here-->
 
 
                 <div class="training-box">
         <h1 class="traininghere">For Training</h1>
-            <form>
+            <form name="trainingform" name="mytrainingform" onsubmit=" return validateForm()">
             <p>Username</p>
             <input type="text" name="username" placeholder="Enter Username">
             <p>email</p>

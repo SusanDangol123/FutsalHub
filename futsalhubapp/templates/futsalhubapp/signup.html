@@ -2,12 +2,88 @@
 
   {% block body %}
     {% load static %}
+
+
+
+
+<script>
+function validateForm()
+{
+  var firstn = document.forms["signupform"]["fname"].value;
+  var lastn = document.forms["signupform"]["lname"].value;
+  var email = document.forms["signupform"]["email"].value;
+  var password = document.forms["signupform"]["password"].value;
+  var username = document.forms["signupform"]["username"].value;
+  var repassword = document.forms["signupform"]["repassword"].value;
+
+  var atposition=email.indexOf("@");
+  var dotposition=email.lastIndexOf(".");
+
+
+ if (username== "" )
+   {
+    alert("please enter username");
+    return false;
+   }
+
+   if (firstn== "" )
+   {
+    alert("please enter First name");
+    return false;
+   }
+   if (lastn== "" )
+   {
+    alert("please enter Last name");
+    return false;
+   }
+
+   if (email== "" )
+   {
+    alert("please enter email");
+    return false;
+   }
+
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+  {
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+  return false;
+  }
+
+   if (password == "")
+  {
+    alert("please enter password");
+    return false;
+  }
+
+   if (password.length < 0 || password.length >= 18)
+  {
+    alert("Invalid Length!, Password must greater then 4 and less then 18 in Length.");
+    return false;
+  }
+ if (repassword== "" )
+   {
+    alert("please enter repeat password ");
+    return false;
+   }
+ if(password != repassword)
+   {
+    alert("password not match");
+    return false;
+   }
+
+}
+</script>
+
+
+
+
+
    	 <div class="container"> <!--content start here-->
 
 
              <div class="signup-box">
         <h1>signup Here</h1>
-            <form method="POST" action="/signup">
+            <form method="POST" action="/signup" name="signupform" onsubmit=" return validateForm()">
                  {% csrf_token %}
             <p>First name</p>
             <input type="text" name="fname" placeholder="Enter first name">

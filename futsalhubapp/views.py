@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from futsalhubapp.forms import UserForm,PlayerForm
 from futsalhubapp.models import User,Player
+from django.http import HttpResponse,JsonResponse
 
 from futsalhubapp.authenticate import Authenticate
 
@@ -34,6 +35,14 @@ def patan(request):
 
 def kumaripati(request):
     return render(request,"futsalhubapp/kumaripati.html")
+
+
+
+def search(request):
+    users=User.objects.filter(email__contains=request.GET['search']).values()
+    return JsonResponse(list(users),safe=False)
+
+
 
 
 #Admin signup
