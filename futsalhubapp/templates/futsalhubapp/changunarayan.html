@@ -3,21 +3,30 @@
   {% block body %}
     {% load static %}
 
+ <style>
+.bimg{
 
-   	 <div class="container"> <!--content start here-->
+    background-image: url( "{% static 'futsalhubapp/images/p2.jpg' %}");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: top;
 
+}
+</style>
 
-<h3 class="welcomeinfutsalclubs">Welcome to Chagunarayan Futsal.</h3>
+<div class="bimg">
+
+<h3 class="welcomeinfutsalclubs">Welcome to Changunarayan Futsal.</h3>
 
  <div class="name_and_location">
-        <h5>Futsal Name: Chagunarayan Futsal</h5>
-        <h5>Location: Chagunarayan, Bhaktapur,NEPAL</h5>
+        <h5>Futsal Name: Changunarayan Futsal</h5>
+        <h5>Location: Changunarayan, Kathmandu,NEPAL</h5>
     </div>
 
 <div class="futsalinfo">
-    <h5>Number of Fields:  One</h5>
+    <h5>Number of Fields:  two</h5>
     <h5>Facilities: Free Wi-Fi</h5>
-    <h5>Contacts: 987787878</h5>
+    <h5>Contacts: 9877817878</h5>
     <h5>Websites: www.futsalclub.com</h5>
 </div>
 
@@ -34,12 +43,12 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Morning(6am – 10am)</td>
+      <td>Morning(6am – 9am)</td>
       <td>Rs. 900  </td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Afternoon(10am – 4pm)</td>
+      <td>Afternoon(9am – 4pm)</td>
       <td>Rs. 1200</td>
     </tr>
 
@@ -55,15 +64,15 @@
 </div>
 
 <div class="Booking_Button_each_club">
-    <button type="button" class="btn btn-success"><h4>Book Now</h4></button>
+    <button type="button" ><h4></h4></button>
 </div>
 
 
      </div>
 
 
-<div class="locationmap">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.452939156488!2d85.43021041479248!3d27.703298282793583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b2f6796e973%3A0xac800051852f6c0!2sYamaraya%20Souvenir%20Shop!5e0!3m2!1sen!2snp!4v1581320620890!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</div>
+
+
+
 
     {% endblock %}

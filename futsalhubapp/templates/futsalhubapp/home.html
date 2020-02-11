@@ -3,7 +3,20 @@
   {% block body %}
     {% load static %}
 
-     	 <div class="container"> <!--content start here-->
+
+
+ <style>
+.bimg{
+
+    background-image: url( "{% static 'futsalhubapp/images/background.jpg' %}");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+</style>
+
+<div class="bimg">
 
             <div class="welcome">
                 <h2 class="text-primary">Welcome to nepal's best footsal club.</h2>
@@ -20,7 +33,7 @@
 
                   <a class="events" href="#about.html">Event<br>
                          21 june 2020 nepali football captain Susan dongol
-                         will be come as guest and he will....<br>
+                         will be come as guest<br>
                         </a> &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -32,17 +45,19 @@
 
                     <a class="events" href="#about.html">Event<br>
                          From 5 april 2020 Thamel futsal will be come
-                         giving training so register fast<br>
+                         giving training so<br>
                         </a> &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp; &nbsp;
 
                     <a class="events" href="#about.html">Event<br>
                         7 april 2020 Intercollege futsal tournament is being
-                         organised by Patan futsal<br>
+                         organised <br>
                         </a> &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; &nbsp; &nbsp; &nbsp;
-  
+
             </div>
 
          </div>
+
+
     {% endblock %}

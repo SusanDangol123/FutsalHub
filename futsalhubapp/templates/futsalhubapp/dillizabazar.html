@@ -3,21 +3,30 @@
   {% block body %}
     {% load static %}
 
+ <style>
+.bimg{
 
-   	 <div class="container"> <!--content start here-->
+    background-image: url( "{% static 'futsalhubapp/images/p3.jpg' %}");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: top;
 
+}
+</style>
 
-<h3 class="welcomeinfutsalclubs">Welcome to Dillizabazar Futsal.</h3>
+<div class="bimg">
+
+<h3 class="welcomeinfutsalclubs">Welcome to Dillibazar Futsal.</h3>
 
  <div class="name_and_location">
-        <h5>Futsal Name: Dillizabazar Futsal</h5>
-        <h5>Location: Dillizabazar, Kathmandu,NEPAL</h5>
+        <h5>Futsal Name: Dillibazar Futsal</h5>
+        <h5>Location: Dillibazar, Kathmandu,NEPAL</h5>
     </div>
 
 <div class="futsalinfo">
-    <h5>Number of Fields:  One</h5>
+    <h5>Number of Fields:  two</h5>
     <h5>Facilities: Free Wi-Fi</h5>
-    <h5>Contacts: 98097878</h5>
+    <h5>Contacts: 9617817878</h5>
     <h5>Websites: www.futsalclub.com</h5>
 </div>
 
@@ -34,19 +43,19 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Morning(6am – 10am)</td>
-      <td>Rs. 1500  </td>
+      <td>Morning(6am – 11am)</td>
+      <td>Rs. 900  </td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Afternoon(10am – 4pm)</td>
-      <td>Rs. 1200</td>
+      <td>Afternoon(11am – 4pm)</td>
+      <td>Rs. 1500</td>
     </tr>
 
     <tr>
       <th scope="row">3</th>
       <td>Evening(4pm – 9pm)</td>
-      <td>Rs. 1200</td>
+      <td>Rs. 1300</td>
     </tr>
 
   </tbody>
@@ -55,7 +64,7 @@
 </div>
 
 <div class="Booking_Button_each_club">
-    <button type="button" class="btn btn-success"><h4>Book Now</h4></button>
+    <button type="button" ><h4></h4></button>
 </div>
 
 
@@ -63,7 +72,7 @@
 
 
 
-<div class="locationmap">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3847688569485!2d85.32448051479257!3d27.705403982792717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77f1ab301%3A0xb213d09ebce4b3da!2sDillibazar!5e0!3m2!1sen!2snp!4v1581320726750!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+
 
     {% endblock %}
