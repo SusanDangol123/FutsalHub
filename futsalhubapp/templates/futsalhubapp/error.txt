@@ -1,3 +1,5 @@
 adminlogin *
 user in dashboard without validation
 pagination
+view ko show
+admin user two times showing

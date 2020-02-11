@@ -5,7 +5,7 @@ from .import views
 urlpatterns = [
     path("",views.home, name=" home "),
     path("home",views.home, name=" home "),
-
+path("search",views.search, name=" home "),
 
     path("balaju",views.balaju, name=" home "),
     path("thamel",views.thamel, name=" home "),

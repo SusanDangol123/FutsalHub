@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="864b2800-6ae7-4c74-b2c9-d1a7ebe3e1af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/jawalakhel.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/jawalakhel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/kumaripati.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/kumaripati.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/patan.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/patan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/suryabinayak.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/suryabinayak.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/thamel.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/thamel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/thimi.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/thimi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/error.txt" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/templates/futsalhubapp/error.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futsalhubapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futsalhubapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/futsalhubapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +74,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="154" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580636122690" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1581337104023">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1581387184205">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581337104023" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581387184205" />
   </component>
 </project>
