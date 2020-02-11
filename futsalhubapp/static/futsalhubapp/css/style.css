@@ -22,7 +22,7 @@
     font-size: 40px;
     padding-top: 90px;
     padding-left: 200px;
-}   
+}
 .lead {
     font-size: 20px;
 }
@@ -210,14 +210,14 @@ margin-bottom: 30px;
 
 }
 
-.footersocialmedia{   
-    float: right; 
+.footersocialmedia{
+    float: right;
 
 
 
     text-align:left;
-   
-   
+
+
     padding-top: 5px;
     padding-left:3px;
 }
@@ -252,7 +252,7 @@ color: white;
 }
 .fa-twitter{
 background: #3B5998;
-color: white;   
+color: white;
 }
 .fa-youtube {
 background: #bb0000;
@@ -287,34 +287,51 @@ color: white;
 /*other web pages*/
 
 .futsaltimetable{
-color: black; 
+color: black;
 padding-top: 31px;
 text-align: center;
 font-size: 40px;
 }
+
+
 .futsalinfo{
- color: white;  
- padding-top: 20px;    
- font-size: 50px; 
- padding-left: 29px; 
+ color: black;
+ padding-top: 1px;
+ font-size: 50px;
+ padding-left: 29px;
+ width:300px;
+ background-color:red;
 }
-.welcomeinfutsalclubs{    
-    color: red; 
+
+.welcomeinfutsalclubs{
+    color: red;
     text-align: center;
     font-size: 55px;
 }
 .name_and_location{
-    padding-left: 29px; 
-    color: white; 
-    padding-top: 50px;
+    padding-left: 29px;
+    color: black;
+    padding-top: 1px;
+    width:300px;
     font-size: 50px;
+    background-color:red;
 
 }
+#locationmap
+{
+margin-left:auto;
+margin-right:auto;
+position:absolute;
+padding-left:700px;
+width:100%;
+height:50%;
+}
+
+
 .Booking_Button_each_club{
     float: right;
     padding-right: 490px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 30px;
 
 }
 
@@ -580,11 +597,3 @@ h1{
     margin-top: 10px;
 }
 
-.locationmap
-{
-padding-right:100px;
-padding-left:70px;
-padding-top:5px;
-padding-bottom:100px;
-
-}

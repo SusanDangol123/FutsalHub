@@ -58,17 +58,18 @@ function validateForm()
 
                 <div class="training-box">
         <h1 class="traininghere">For Training</h1>
-            <form name="trainingform" name="mytrainingform" onsubmit=" return validateForm()">
+            <form name="trainingform"  method="POST" action="/training" name="mytrainingform" onsubmit=" return validateForm()">
+                {% csrf_token %}
             <p>Username</p>
-            <input type="text" name="username" placeholder="Enter Username">
+            <input type="text" name="username" placeholder="Enter Username" required>
             <p>email</p>
-            <input type="text" name="email" placeholder="Enter email">
+            <input type="text" name="email" placeholder="Enter email" required>
             <p>phone no.</p>
-            <input type="number" name="phone" placeholder="Enter phone number">
+            <input type="number" name="phone" placeholder="Enter phone number" required>
 
 
             <p>Time Duration</p>
-            <input type="radio" name="time" value="1month" >Rs.5000/1 month<br>
+            <input type="radio" name="time" value="1month" required>Rs.5000/1 month<br>
              <input type="radio" name="time" value="3month">Rs.9000/3 months<br>
              <input type="radio" name="time" value="6month"> Rs.13000/6 months<br>
 

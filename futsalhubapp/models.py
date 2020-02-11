@@ -21,3 +21,14 @@ class Player(models.Model):
     class Meta:
         db_table="player"
 
+
+class Training(models.Model):
+    tid = models.AutoField(auto_created=True, primary_key=True)
+    username = models.CharField(max_length=101)
+    email = models.CharField(max_length=60)
+    phone= models.CharField(max_length=70)
+    time= models.CharField(max_length=70)
+
+    class Meta:
+        db_table="training"
+

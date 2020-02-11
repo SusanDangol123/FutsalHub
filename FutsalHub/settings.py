@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'FutsalHub.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testdb',
+        'NAME': 'futsalhub',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',

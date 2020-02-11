@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from futsalhubapp.forms import UserForm, PlayerForm
-from futsalhubapp.models import User, Player
+from futsalhubapp.forms import UserForm, PlayerForm,TrainingForm
+from futsalhubapp.models import User, Player,Training
 from django.http import HttpResponse, JsonResponse
 
 from futsalhubapp.authenticate import Authenticate
@@ -157,8 +157,16 @@ def entryCustomer(request):
 
 @Authenticate.valid_player
 def training(request):
-    player = Player.objects.all()
-    return render(request, "futsalhubapp/training.html", {'Player': player})
+    if request.method == "POST":
+        username = request.POST['username']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        time = request.POST['time']
+
+        traininginfo = Training(username=username, email=email, phone=phone, time=time)
+        traininginfo.save()
+        print("Booked done")
+    return render(request, "futsalhubapp/training.html")
 
 
 def showCustomer(request):
@@ -179,6 +187,6 @@ def showCustomer(request):
         players = Player.objects.raw("Select * from Player limit 3 offset 0")
     return render(request, "futsalhubapp/showCustomer.html", {'players': players, 'page': page})
 
-
+@Authenticate.valid_user
 def dashboard(request):
     return render(request, "futsalhubapp/dashboard.html")
